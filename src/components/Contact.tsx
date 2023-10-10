@@ -28,7 +28,7 @@ const Contact = () => {
     register,
     handleSubmit,
     reset,
-    formState: { isSubmitting, errors, isSubmitSuccessful },
+    formState: { isSubmitting, errors },
   } = useForm<ContactFormType>({
     resolver: zodResolver(contactFormSchema),
   });
@@ -42,8 +42,6 @@ const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY as string
       );
       if (result.status === 200) {
-        console.log('yes');
-
         toast.success('Your message was sent successfully !', {
           theme: 'dark',
         });
