@@ -9,6 +9,7 @@ import emailjs from '@emailjs/browser';
 import { z } from 'zod';
 import ErrorMessage from './ErrorMessage';
 import { useRef } from 'react';
+import { toast } from 'react-toastify';
 
 const contactFormSchema = z
   .object({
@@ -22,19 +23,17 @@ const contactFormSchema = z
 
 type ContactFormType = z.infer<typeof contactFormSchema>;
 const Contact = () => {
-  const form = useRef();
+  const form = useRef(null);
   const {
     register,
     handleSubmit,
     reset,
-    formState: { isSubmitting, errors },
+    formState: { isSubmitting, errors, isSubmitSuccessful },
   } = useForm<ContactFormType>({
     resolver: zodResolver(contactFormSchema),
   });
 
-  async function sendEmailMessage(userInput: ContactFormType) {
-    console.log(form.current);
-
+  async function sendEmailMessage() {
     try {
       const result = await emailjs.sendForm(
         import.meta.env.VITE_SERVICE_ID as string,
@@ -42,7 +41,13 @@ const Contact = () => {
         form.current!,
         import.meta.env.VITE_PUBLIC_KEY as string
       );
-      console.log(result);
+      if (result.status === 200) {
+        console.log('yes');
+
+        toast.success('Your message was sent successfully !', {
+          theme: 'dark',
+        });
+      }
     } catch (error) {
       console.log(error);
     }
@@ -118,7 +123,8 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="flex items-center justify-center gap-x-4   border-2 bg-transparent uppercase px-8 py-4 place-self-center hover:bg-white hover:text-[#222] transition-all duration-200 font-semibold group"
+            className="flex items-center justify-center gap-x-4   border-2 bg-transparent uppercase px-8 py-4 place-self-center hover:bg-white hover:text-[#222] transition-all duration-200 font-semibold group disabled:bg-gray-500"
+            disabled={isSubmitting}
           >
             <span
               className={`${
