@@ -21,10 +21,10 @@ const Home = () => {
       transition={{
         duration: 0.6,
       }}
-      className="h-[calc(100vh-3.5rem)]  flex items-center justify-center  text-white  relative "
+      className="h-[calc(100vh-3.5rem)]  flex items-center justify-center  text-white  relative px-8  "
     >
       <div className=" text-left  z-10 max-w-screen-xl mx-auto">
-        <h1 className=" text-6xl lg:text-8xl capitalize">
+        <h1 className=" text-4xl md:text-6xl lg:text-8xl capitalize">
           Hi ! I am Mohamed a{' '}
           <span className="bg-gradient-to-r from-cyan-500 to-green-500 font-bold bg-clip-text text-transparent uppercase">
             fullstack{' '}

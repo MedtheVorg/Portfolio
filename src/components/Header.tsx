@@ -4,7 +4,7 @@ const Header = () => {
 
   return (
     <header className="h-14 filter text-white p-4 flex items-center justify-center font-Montserrat backdrop-blur-sm  shadow-2xl  md:text-2xl">
-      <ul className="flex items-center justify-center gap-x-8 uppercase">
+      <ul className="flex items-center justify-center md:gap-x-8 uppercase">
         <li>
           <NavLink
             to={'/'}

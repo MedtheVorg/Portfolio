@@ -68,7 +68,7 @@ const Contact = () => {
         <h1 className="text-left text-4xl md:text-6xl  md:col-span-2 capitalize mb-8 border-b-2 pb-4 font-bold">
           contact
         </h1>
-        <p className="text-2xl">
+        <p className="lg:text-2xl">
           Feel free to use either the following form or the social links to
           contact me.
         </p>

@@ -24,10 +24,10 @@ const Projects = () => {
         </h1>
 
         <ul className="md:pl-8 mt-4 flex flex-col gap-y-32 md:gap-y-16">
-          <li className="grid md:grid-cols-2 max-h-[600px]  gap-x-4 gap-y-6  ">
+          <li className="grid md:grid-cols-2   gap-x-4 gap-y-6  ">
             {/* description */}
             <div>
-              <div className="flex items-center justify-between p-2 mb-8">
+              <div className="flex flex-col items-center justify-between gap-y-2 lg:flex-row lg:gap-y-0  mb-8">
                 <h2 className=" font-jost text-4xl">
                   MiniStore<span className="text-semiBlue">.</span>
                 </h2>
@@ -48,7 +48,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              <div className="text-xl">
+              <div className="lg:text-xl">
                 <p>
                   MiniStore is an e-commerce web application that provides a
                   variety of electronic products for purchase.
@@ -76,7 +76,7 @@ const Projects = () => {
           <li className="grid md:grid-cols-2 max-h-[600px]  gap-x-4 ">
             {/* description */}
             <div>
-              <div className="flex items-center justify-between p-2 mb-8">
+              <div className="flex flex-col items-center justify-between gap-y-2 lg:flex-row lg:gap-y-0  mb-8">
                 <h2 className=" font-jost text-4xl">
                   classi<span className="text-semiBlue">.</span>
                 </h2>
@@ -97,7 +97,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              <div className="text-xl my-4">
+              <div className="lg:text-xl my-4">
                 <p>
                   Classi is a landing page about furniture made with react,
                   tailwindcss and a little bit of framer-motion.
