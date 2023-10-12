@@ -16,7 +16,7 @@ const Projects = () => {
       transition={{
         duration: 0.6,
       }}
-      className="min-h-[calc(100vh-3.5rem)]   text-white   max-w-screen-xl mx-auto"
+      className="  text-white   max-w-screen-xl mx-auto"
     >
       <div className="p-4  pt-20">
         <h1 className="text-left text-4xl md:text-6xl  md:col-span-2 capitalize mb-8 border-b-2 pb-4 font-bold">
@@ -24,7 +24,7 @@ const Projects = () => {
         </h1>
 
         <ul className="md:pl-8 mt-4 flex flex-col gap-y-32 md:gap-y-16">
-          <li className="grid md:grid-cols-2 max-h-[600px]  gap-x-4 gap-y-6 ">
+          <li className="grid md:grid-cols-2 max-h-[600px]  gap-x-4 gap-y-6  ">
             {/* description */}
             <div>
               <div className="flex items-center justify-between p-2 mb-8">
@@ -62,16 +62,16 @@ const Projects = () => {
               </div>
             </div>
             {/* showcase */}
-            <div className="overflow-hidden h-[400px]">
+            <div className="overflow-hidden h-[400px] border-2 ">
               <img
                 src={miniStoreHomePage}
                 alt=""
-                className="w-full object-cover  animate-move-it"
+                className="w-full object-cover  animate-move-it "
               />
             </div>
           </li>
 
-          <hr className="w-1/2 mx-auto" />
+          <hr className="w-1/2 mx-auto " />
 
           <li className="grid md:grid-cols-2 max-h-[600px]  gap-x-4 ">
             {/* description */}
@@ -97,7 +97,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              <div className="text-xl">
+              <div className="text-xl my-4">
                 <p>
                   Classi is a landing page about furniture made with react,
                   tailwindcss and a little bit of framer-motion.

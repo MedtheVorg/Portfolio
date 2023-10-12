@@ -11,7 +11,7 @@ const About = () => {
       transition={{
         duration: 0.6,
       }}
-      className="h-[calc(100vh-3.5rem)]   text-white   max-w-screen-xl mx-auto"
+      className="   text-white   max-w-screen-xl mx-auto"
     >
       <div className="p-8 ">
         <h1 className="text-left text-4xl md:text-6xl  md:col-span-2 capitalize mb-8 border-b-2 pb-4 font-bold">
@@ -19,8 +19,8 @@ const About = () => {
         </h1>
         <div className="flex flex-col gap-y-4">
           <p className="text-2xl">
-            I am Mohamed lemaallaoui a morrocan full stack web developer based
-            in Morocco
+            Hello 👋! I am Mohamed lemaallaoui a morrocan full stack web
+            developer based in Morocco.
           </p>
           <p className="text-2xl">
             I consider myself a full stack web developer as I have been using
@@ -47,6 +47,7 @@ const About = () => {
             hopes of being part of a team where I can put my skills to use and
             grow as a developer.
           </p>
+          <p></p>
         </div>
       </div>
     </motion.section>

@@ -9,6 +9,7 @@ import reactIcon from '../assets/react.svg';
 import typescriptIcon from '../assets/typescript-icon.svg';
 import tailwindIcon from '../assets/tailwindcss-icon.svg';
 import mongoIcon from '../assets/mongodb-icon.svg';
+import { BsArrowRight } from 'react-icons/bs';
 
 const Home = () => {
   return (
@@ -20,9 +21,9 @@ const Home = () => {
       transition={{
         duration: 0.6,
       }}
-      className="h-[calc(100vh-3.5rem)]  flex items-center justify-center  text-white  relative"
+      className="h-[calc(100vh-3.5rem)]  flex items-center justify-center  text-white  relative "
     >
-      <div className="px-20 text-left  z-10">
+      <div className=" text-left  z-10 max-w-screen-xl mx-auto">
         <h1 className=" text-6xl lg:text-8xl capitalize">
           Hi ! I am Mohamed a{' '}
           <span className="bg-gradient-to-r from-cyan-500 to-green-500 font-bold bg-clip-text text-transparent uppercase">
@@ -32,9 +33,9 @@ const Home = () => {
         </h1>
         <Link
           to={'/projects'}
-          className="px-8 py-4 border-2 capitalize mt-8 inline-block text-xl hover:bg-white hover:text-[#222] transition-all duration-300 mx-auto "
+          className="px-8 py-4 border-2 capitalize mt-8 inline-block text-xl hover:bg-white hover:text-[#222]  transition-all duration-300 mx-auto  "
         >
-          view projects{' '}
+          view projects <BsArrowRight className="inline-block" />
         </Link>
       </div>
       <img

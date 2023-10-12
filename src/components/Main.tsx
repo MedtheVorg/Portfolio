@@ -5,6 +5,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import NotFound from './NotFound';
+import SocialLinks from './SocialLinks';
 
 const Main = () => {
   const location = useLocation();
