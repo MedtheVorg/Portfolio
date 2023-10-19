@@ -33,7 +33,7 @@ const Projects = () => {
                 </h2>
                 <div className="flex gap-x-2  ">
                   <a
-                    href="https://mini-store-ecommerce-website-iota.vercel.app/"
+                    href="https://ministoree.vercel.app/"
                     target="_blank"
                     className="border-2 px-2 py-[1px] md:px-4 md:py-2 flex items-center justify-center gap-x-2 hover:text-[#222] hover:bg-white transition-all duration-200"
                   >
@@ -82,7 +82,7 @@ const Projects = () => {
                 </h2>
                 <div className="flex gap-x-2  ">
                   <a
-                    href="https://classi-landing-page.vercel.app/"
+                    href="https://classilandingpage.vercel.app/"
                     target="_blank"
                     className="border-2 px-2 py-[1px] md:px-4 md:py-2 flex items-center justify-center gap-x-2 hover:text-[#222] hover:bg-white transition-all duration-200"
                   >
