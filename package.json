@@ -15,7 +15,7 @@
     "@emailjs/browser": "^3.11.0",
     "@hookform/resolvers": "^3.3.1",
     "concurrently": "^8.2.1",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^11.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.47.0",
